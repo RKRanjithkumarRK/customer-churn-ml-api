@@ -42,3 +42,12 @@ Response:
   "prediction": 1,
   "probability": 0.63
 }
+---
+
+### Retrain Model
+POST /retrain
+
+Response:
+{
+  "message": "Model retraining initiated successfully."
+}
