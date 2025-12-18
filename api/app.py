@@ -40,6 +40,14 @@ class ChurnRequest(BaseModel):
     MonthlyCharges: float
     TotalCharges: float
 
+@app.get("/")
+def root():
+    return {
+        "message": "Customer Churn Prediction API is running",
+        "docs": "/docs",
+        "health": "/health"
+    }
+
 @app.get("/health")
 
 def health():
